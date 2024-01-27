@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../asset/font.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <style>
+    body, p { margin: 0!important; padding: 0!important; }
+    .upload-content {
+      margin: -18px -15px 0;
+      font-family: 'nanumsquare', sans-serif;
+      font-style: normal;
+      letter-spacing: -0.02em;
+      text-align: justify;
+      word-break: break-all;
+    }
+    .upload-content .up-inner {
+      padding: 15px;
+      box-sizing: border-box;
+      background-color: #e8e6e2;
+    }
+    .upload-content .up-inner img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .upload-content .up-inner .pc {
+      display: none;
+    }
+    .upload-content .up-inner .btn {
+      display: inline-block;
+    }
+    .upload-content .up-inner .t-tc {
+      text-align: center;
+    }
+    .upload-content .up-inner .c-r {
+      color: #da291c;
+    }
+    .upload-content .up-inner p {
+      color: #000;
+      line-height: 1.7;
+    }
+    .upload-content .up-inner .eb {
+      font-weight: 800 !important;
+    }
+    .upload-content .up-inner .tit {
+      font-size: 17px;
+      line-height: 30px;
+    }
+    .upload-content .up-inner .txt {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+    .upload-content .up-inner .txt-bg {
+      background-color: #ffecbb;
+    }
+    .upload-content .up-inner .org {
+      color: #ff6a39;
+    }
+    .upload-content .up-inner .red-b {
+      border-bottom: 1px solid #da291c !important;
+    }
+    .upload-content .up-inner .cont {
+      padding-top: 45px;
+      padding-right: 0px;
+      padding-bottom: 45px;
+      padding-left: 0px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #000;
+    }
+    .upload-content .up-inner .cont img {
+      margin-top: 25px;
+      margin-right: 0px;
+      margin-bottom: 25px;
+      margin-left: 0px;
+    }
+    .upload-content .up-inner .cont img:last-child {
+      margin-bottom: 0px;
+    }
+    .upload-content .up-inner .cont .msg {
+      max-width: 330px !important;
+    }
+    .upload-content .up-inner .c-top {
+      padding-top: 30px;
+      padding-right: 0px;
+      padding-bottom: 30px;
+      padding-left: 0px;
+      box-sizing: border-box;
+      border-top: 1px solid #da291c;
+      border-bottom: 1px solid #da291c;
+    }
+    .upload-content .up-inner .cont2 span {
+      font-size: 13px;
+      line-height: 20px;
+      color: #7c7c7c;
+      display: block;
+    }
+    .upload-content .up-inner .cont2 span s {
+      text-decoration: none;
+      font-weight: 700;
+      color: #c50018;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .upload-content .up-inner .cont4 {
+      border-bottom: 1px solid #da291c;
+      text-align: center;
+      padding-bottom: 45px;
+    }
+    .upload-content .up-inner .cont4 p {
+      text-align: left;
+    }
+    .upload-content .up-inner .cont4 .link {
+      width: 231px;
+      height: 40px;
+      margin-top: 20px;
+    }
+    .upload-content .up-inner .cont4 .link img {
+      margin-top: 0px;
+    }
+    .upload-content .up-inner .writer {
+      padding-top: 50px;
+      padding-right: 0px;
+      padding-bottom: 40px;
+      padding-left: 0px;
+      box-sizing: border-box;
+    }
+    .upload-content .up-inner .writer p {
+      font-size: 13px;
+      line-height: 23px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px !important;
+      font-weight: 700;
+    }
+    @media screen and (min-width: 768px) {
+      .upload-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .upload-content .up-inner {
+        padding: 50px;
+      }
+      .upload-content .up-inner .mo {
+        display: none;
+      }
+      .upload-content .up-inner .pc {
+        display: inline-block;
+      }
+      .upload-content .up-inner .txt {
+        font-size: 17px;
+        line-height: 30px;
+      }
+      .upload-content .up-inner .cont {
+        padding-top: 45px;
+        padding-right: 0px;
+        padding-bottom: 45px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .cont img {
+        margin-top: 30px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+      }
+      .upload-content .up-inner .cont .msg {
+        max-width: 700px !important;
+      }
+      .upload-content .up-inner .c-top {
+        padding-top: 45px;
+        padding-right: 0px;
+        padding-bottom: 45px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .c-top .tit {
+        font-size: 20px;
+        line-height: 32px;
+      }
+      .upload-content .up-inner .cont2 span {
+        font-size: 15px;
+        line-height: 25px;
+      }
+      .upload-content .up-inner .cont4 {
+        padding-bottom: 85px;
+      }
+      .upload-content .up-inner .cont4 .link {
+        width: 374px;
+        height: 65px;
+        margin-top: 55px;
+      }
+      .upload-content .up-inner .writer {
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .writer p {
+        font-size: 17px;
+        line-height: 30px;
+      }
+    }
+  </style>
+  <div class="upload-content ">
+    <div class="up-inner page8">
+      <div class="cont cont1 c-top">
+        <p class="tit eb">아기는 작은 몸으로 태어나 매일 한 뼘씩 자랍니다. 우리 주변에 태어난 모든 아기가 건강하게 자라길, 자라는 동안 행복하기를 바라는 마음으로 시작한 캠페인이 있습니다. 영유아용품 지원 캠페인 ‘한 뼘 아기의 시선이 닿는 거리’입니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_9c67570f37c7448b969e707e0427d216.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_0f46b3de362e4dfabb45dd4170696419.png" class="pc" alt="">
+      </div>
+
+      <div class="cont cont2">
+        <p class="txt eb">기저귀 값이 걱정되는 사회</p>
+        <p class="txt">2023년 분유, 기저귀, 유아동복의 물가 상승률을 다룬 기사1 에 따르면, 2023년 1월부터 10월까지 집계된 유아동복, 기저귀, 분유 물가가 상승했다고 합니다. 유아동복은 관련 통계가 집계된 1985년 이후 최대 상승률인 12.1% 상승했고, 기저귀 가격 상승률은 9.6%로 외환위기 당시인 1998년에 10.6%를 기록한 이후 가장 높은 상승세라고 합니다. 이는 점점 양육비용 부담이 커질 수밖에 없는 현실을 보여주는 숫자이기도 합니다. 월 평균 소득이 낮고, 양육자가 경제활동이 어려운 사정이 있는 저소득가정은 말 그대로 기저귀 값을 걱정합니다. 실제로 월평균 소득 199만 원 이하 가구 80%가 육아용품 구매비용이 부담된다고 응답한 연구 결과도 있습니다2. 이에 세이브더칠드런은 2023년 상반기에 전국 아동권리센터, 산하시설 10개소를 대상으로 영유아용품 지원 사업을 진행했습니다. 영유아를 양육하는 저소득가정에 필요한 영유아용품을 지원하여 가정의 양육비 부담을 줄이고, 아동의 양육환경이 개선되도록 도왔습니다. </p>
+        <br>
+        <span><s>1</s> 한지혜 기자, 엄마·아빠 허리 휜다…육아용품 물가, 1985년 이후 최대 상승률, 중앙일보(joongang.co.kr), 2023년 11월 13일</span>
+        <span><s>2</s> 영아 자녀를 둔 가구의 육아지원 수요와 정책적 함의 (육아정책포럼,2022)</span>
+        <br>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_24c09a7766ca4b4799f2cbc629bc8bf3.png" class="mo msg" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_644110bebb0b4ea8bde3cf2e13277773.png" class="pc msg" alt="">
+      </div>
+
+      <div class="cont cont3">
+        <p class="txt eb">성장을 위해 필요한 영유아용품</p>
+        <p class="txt">한 아이가 신체적·정서적으로 건강하게 자라기 위해서는 필요한 물건이 많습니다. 단순히 먹이고 입히는 일 이외에도 연령에 맞는 성장을 돕는 장난감과 책이나, 옷과 신발도 항상 구입해야 하는 물건입니다. 국내 저소득 가정에 영유아용품을 지원한 결과, 예상보다 더 많은 가정에서 다양한 영유아용품 지원이 절실하다는 것을 확인할 수 있었습니다. 더 많은 아동과 가정을 지원할 수 있도록 2024년에도 지원을 이어 나가기로 했습니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_db171cdfa9334799bb1a58537b16dcb7.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_89b22f6b367c41199fd02bb58066de92.png" class="pc" alt="">
+      </div>
+
+      <div class="cont cont4">
+        <p class="txt eb">8개월 이서를 위해</p>
+        <p class="txt">모자원 한 칸 방이 이서(가명)의 집입니다. 작은 방이지만, 이서의 우주를 지켜주는 엄마와 함께 잠드는 집입니다. 엄마의 사랑으로 매일 자라나는 이서가 건강하게 자랄 수 있도록 캠페인을 진행중입니다. 캠페인을 통해 보내주신 후원금은 이서 가족을 위한 영유아용품(기저귀, 분유, 이유식 등) 지원과 모자원 가족의 자립 지원을 포함, 국내 저소득가정 영유아들의 건강한 성장을 돕는 데에 사용됩니다. 후원자님의 많은 관심과 성원 부탁드립니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_0a2460a9e0054f24bcbf4d606cb48afb.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_d12fa0b72a784b1587f284f9b27f4a70.png" class="mo msg" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_139427ce930b4193bb35735a0cbaa66e.png" class="pc" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_7bb7f8d9c9da46f08d7ba42e55f2e002.png" class="pc msg" alt="">
+
+        <a href="https://www.sc.or.kr/support/supportMonth.do?CAMPAIGN=1157&S=29333&utm_source=email_pr&utm_medium=email&utm_campaign=newsletter_pr" class="btn link" target="_blank"><img src="https://www.sc.or.kr/upload/Editor/2024/editor_9154321aa32140c5b21a50f7c6fdf9fc.png" class="mo" alt=""><img src="https://www.sc.or.kr/upload/Editor/2024/editor_ba827b93c40c4428b212c1909fc318ef.png" class="pc" alt=""></a>
+      </div>
+
+      <div class="writer">
+        <p><span class="c-r">글</span> 미디어팀 문지은</p>
+        <p><span class="c-r">사진</span> 세이브더칠드런</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../asset/font.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <style>
+    body, p { margin: 0!important; padding: 0!important; }
+    .upload-content {
+      margin: -18px -15px 0;
+      font-family: 'nanumsquare', sans-serif;
+      font-style: normal;
+      letter-spacing: -0.02em;
+      text-align: justify;
+      word-break: break-all;
+    }
+    .upload-content .up-inner {
+      padding: 15px;
+      box-sizing: border-box;
+      background-color: #ffe5ee;
+    }
+    .upload-content .up-inner .pc {
+      display: none;
+    }
+    .upload-content .up-inner .eb {
+      font-weight: 800 !important;
+    }
+    .upload-content .up-inner img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .upload-content .up-inner .btn {
+      display: inline-block;
+    }
+    .upload-content .up-inner .t-tc {
+      text-align: center;
+    }
+    .upload-content .up-inner .c-r {
+      color: #da291c;
+    }
+    .upload-content .up-inner p {
+      color: #000;
+      line-height: 1.7;
+    }
+    .upload-content .up-inner .tit {
+      font-size: 17px;
+      line-height: 30px;
+    }
+    .upload-content .up-inner .txt {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+    .upload-content .up-inner .txt-bg {
+      background-color: #ffecbb;
+    }
+    .upload-content .up-inner .red-b {
+      border-bottom: 1px solid #da291c !important;
+    }
+    .upload-content .up-inner .c-top {
+      padding-top: 25px;
+      padding-right: 15px;
+      padding-bottom: 35px;
+      padding-left: 15px;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .upload-content .up-inner .c-top p {
+      text-align: left;
+    }
+    .upload-content .up-inner .cont {
+      padding-top: 35px;
+      padding-right: 0px;
+      padding-bottom: 50px;
+      padding-left: 0px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #da291c;
+      text-align: center;
+    }
+    .upload-content .up-inner .cont .p {
+      text-align: left;
+    }
+    .upload-content .up-inner .cont .q {
+      margin-bottom: 15px !important;
+      text-align: left;
+    }
+    .upload-content .up-inner .cont .q span {
+      text-transform: uppercase;
+      color: #da291c;
+    }
+    .upload-content .up-inner .cont .box {
+      background-color: #fff;
+      border-radius: 6px;
+      padding: 15px !important;
+      box-sizing: border-box;
+      margin-bottom: 40px !important;
+      text-align: left;
+    }
+    .upload-content .up-inner .cont .link {
+      width: 238px;
+      height: 40px;
+      margin-top: 10px;
+    }
+    .upload-content .up-inner .cont .link img {
+      width: 100%;
+      margin: 0px;
+    }
+    @media screen and (min-width: 768px) {
+      .upload-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .upload-content .up-inner {
+        padding: 50px;
+      }
+      .upload-content .up-inner .pc {
+        display: inline-block;
+      }
+      .upload-content .up-inner .mo {
+        display: none;
+      }
+      .upload-content .up-inner .txt {
+        font-size: 17px;
+        line-height: 30px;
+      }
+      .upload-content .up-inner .cont {
+        padding-top: 45px;
+        padding-right: 0px;
+        padding-bottom: 45px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .cont img {
+        margin-top: 30px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+      }
+      .upload-content .up-inner .cont .msg {
+        max-width: 700px !important;
+      }
+      .upload-content .up-inner .tit {
+        font-size: 20px;
+        line-height: 32px;
+      }
+      .upload-content .up-inner .txt {
+        font-size: 17px;
+        line-height: 30px;
+      }
+      .upload-content .up-inner .c-top {
+        padding-top: 40px !important;
+        padding-right: 0px !important;
+        padding-bottom: 40px !important;
+        padding-left: 0px !important;
+      }
+      .upload-content .up-inner .cont {
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .cont .q {
+        margin-bottom: 15px !important;
+      }
+      .upload-content .up-inner .cont .box {
+        border-radius: 8px;
+        padding-top: 20px !important;
+        padding-right: 35px !important;
+        padding-bottom: 20px !important;
+        padding-left: 35px !important;
+        margin-bottom: 45px !important;
+        text-align: left;
+      }
+      .upload-content .up-inner .cont .link {
+        width: 431px;
+        height: 66px;
+        margin-top: 45px;
+      }
+      .upload-content .up-inner .cont2 {
+        padding-bottom: 90px;
+      }
+    }
+  </style>
+  <div class="upload-content ">
+    <div class="up-inner">
+      <div class="cont cont1 c-top">
+        <p class="tit eb">세이브더칠드런은 모든 아동의 생존, 보호, 발달 및 참여의 권리를 온전히 누리는 세상을 꿈꿉니다. 아동권리를 위해 세이브더칠드런과 함께 외쳐주시고 응원해 주시는 분들이 있습니다. 바로 후원자님인데요. 지난 연말 후원자 감사 캠페인 ‘어제의 나에게, 오늘의 너에게’ 참여로 만났던 이다연 후원자님의 따뜻한 이야기를 전합니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_6387f39700db4d9999200af6ceb24d97.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_f3fec41a225d4f48a04e8f03555340d3.png" class="pc" alt="">
+      </div>
+
+      <div class="cont cont2">
+        <p class="txt eb q"><span>q1.</span> 안녕하세요, 다연 후원자님! 세이브더칠드런과 어떤 인연으로 만나게 되었나요?</p>
+        <p class="txt box">어렸을 적부터 친구들의 이야기 들어주는 것을 좋아했어요. 상담해 주는 동아리 활동도 하며 많은 이야기를 듣다 보니 도움이 필요한데 도움을 못 받는 아이들이 많겠다는 생각이 들더라고요. 아이들에게 작은 도움이라도 줄 수 있는 어른이 되고 싶었어요.</p>
+        <p class="txt eb q"><span>q2.</span> 다연 후원자님은 어떤 아이였나요?</p>
+        <p class="txt box">꿈도 많고 사랑하는 것, 하고 싶은 것이 참 많은 아이였어요. 선생님과 부모님의 말씀도 잘 듣고 이야기 나누는 걸 좋아하다 보니 가족들과의 대화도 많았고요. 무대에 서는 가수나 선생님 등 꿈은 자주 바뀌었던 것 같아요.</p>
+        <p class="txt eb q"><span>q3.</span> 어른이 된 지금, 어린 시절의 나에게 해주고 싶은 이야기가 있으신가요?</p>
+        <p class="txt box">스스로 잘하지 못하면 타인에게 보여주는 걸 너무 부끄럽고 창피해했어요. 뭐든지 처음이면 잘 못하는 게 당연한 건데, 남에게 그런 모습을 보여주기 싫어서 새롭게 시도하거나 도전할 기회를 많이 놓친 것 같아요. 어린 시절의 저뿐만 아니라 모든 아동에게 처음부터 잘하는 사람은 없으니 완벽하지 않아도 되고 잘하지 않아도 된다고 해주고 싶어요.</p>
+        <p class="txt eb q"><span>q4.</span> 세이브더칠드런과 함께한 이후, 삶에 변화가 있으셨나요?</p>
+        <p class="txt box">평범한 나날들을 보내지만, 내가 누군가에게 도움이 되고 있다는 점을 문득 떠올리게 돼요. 후원의 의미를 사전에서 찾아보니 ‘뒤에서 도와준다’는 의미더라고요. 우리가 아동을 뒤에서 받쳐주고 도와준다면, 작지만 강한 아동이 세상을 향해 힘차게 나아갈 힘을 낼 수 있을 거라 생각해요. 세이브더칠드런의 모든 후원자가 단순한 후원이 아닌 아동에게 든든한 날개가 되어주고 있다는 자부심을 가지셨으면 좋겠어요. 앞으로도 남을 돕는 데 인색하지 않은, 세상이 더 좋아질 수 있다는 긍정적인 믿음을 가진 어른이 되고 싶어요.</p>
+        <a href="https://www.sc.or.kr/2023thankyou/?utm_source=email_pr&utm_medium=email&utm_campaign=newsletter_pr" class="btn link" target="_blank">
+          <img src="https://www.sc.or.kr/upload/Editor/2024/editor_b12a302fc3314a6ab52c70b1cd35cbff.png" class="mo" alt="">
+          <img src="https://www.sc.or.kr/upload/Editor/2024/editor_e1971c9a32dd44d9be2fc78f3dc38576.png" class="pc" alt="">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

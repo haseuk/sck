@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../asset/font.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <style>
+    body, p { margin: 0!important; padding: 0!important; }
+    .upload-content {
+      margin: -18px -15px 0;
+      font-family: 'nanumsquare', sans-serif;
+      font-style: normal;
+      letter-spacing: -0.02em;
+      text-align: justify;
+      word-break: break-all;
+    }
+    .upload-content .up-inner {
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    .upload-content .up-inner img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .upload-content .up-inner .pc {
+      display: none;
+    }
+    .upload-content .up-inner .btn {
+      display: inline-block;
+    }
+    .upload-content .up-inner .t-tc {
+      text-align: center;
+    }
+    .upload-content .up-inner .c-r {
+      color: #da291c;
+    }
+    .upload-content .up-inner p {
+      color: #000;
+      line-height: 1.7;
+    }
+    .upload-content .up-inner .eb {
+      font-weight: 800 !important;
+    }
+    .upload-content .up-inner .tit {
+      font-size: 17px;
+      line-height: 30px;
+    }
+    .upload-content .up-inner .txt {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+    .upload-content .up-inner .txt-bg {
+      background-color: #ffecbb;
+    }
+    .upload-content .up-inner .org {
+      color: #ff6a39;
+    }
+    .upload-content .up-inner .red-b {
+      border-bottom: 1px solid #da291c !important;
+    }
+    .upload-content .up-inner .cont {
+      padding-top: 45px;
+      padding-right: 0px;
+      padding-bottom: 45px;
+      padding-left: 0px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #000;
+    }
+    .upload-content .up-inner .cont img {
+      margin-top: 25px;
+      margin-right: 0px;
+      margin-bottom: 25px;
+      margin-left: 0px;
+    }
+    .upload-content .up-inner .cont img:last-child {
+      margin-bottom: 0px;
+    }
+    .upload-content .up-inner .c-top {
+      padding-top: 30px;
+      padding-right: 0px;
+      padding-bottom: 30px;
+      padding-left: 0px;
+      box-sizing: border-box;
+      border-top: 1px solid #da291c;
+      border-bottom: 1px solid #da291c;
+    }
+    .upload-content .up-inner .cont3 {
+      text-align: center;
+    }
+    .upload-content .up-inner .cont3 p {
+      text-align: left;
+    }
+    .upload-content .up-inner .cont3 img {
+      width: 330px;
+    }
+    .upload-content .up-inner .txt.q {
+      margin-bottom: 10px !important;
+    }
+    .upload-content .up-inner .cont5 {
+      border-bottom: 1px solid #da291c;
+    }
+    .upload-content .up-inner .writer {
+      padding-top: 50px;
+      padding-right: 0px;
+      padding-bottom: 40px;
+      padding-left: 0px;
+      box-sizing: border-box;
+    }
+    .upload-content .up-inner .writer p {
+      font-size: 13px;
+      line-height: 23px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px !important;
+      font-weight: 700;
+    }
+    .upload-content .page5 {
+      background-color: #d7f8e0;
+    }
+    @media screen and (min-width: 768px) {
+      .upload-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .upload-content .up-inner {
+        padding: 50px;
+      }
+      .upload-content .up-inner .mo {
+        display: none;
+      }
+      .upload-content .up-inner .pc {
+        display: inline-block;
+      }
+      .upload-content .up-inner .txt {
+        font-size: 17px;
+        line-height: 30px;
+      }
+      .upload-content .up-inner .cont {
+        padding-top: 45px;
+        padding-right: 0px;
+        padding-bottom: 45px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .cont img {
+        margin-top: 30px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+      }
+      .upload-content .up-inner .c-top {
+        padding-top: 45px;
+        padding-right: 0px;
+        padding-bottom: 45px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .c-top .tit {
+        font-size: 20px;
+        line-height: 32px;
+      }
+      .upload-content .up-inner .cont3 img {
+        width: 700px;
+      }
+      .upload-content .up-inner .cont4 img {
+        margin-bottom: 0px;
+      }
+      .upload-content .up-inner .txt.q {
+        margin-top: 20px !important;
+      }
+      .upload-content .up-inner .writer {
+        padding-top: 10px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .writer p {
+        font-size: 17px;
+        line-height: 30px;
+      }
+    }
+  </style>
+  <div class="upload-content ">
+    <div class="up-inner page5">
+      <div class="cont cont1 c-top">
+        <p class="tit eb">기후위기는 분명한 아동권리의 위기임에도 불구하고, 아이들은 이러한 사실을 배우고, 대처할 기회가 없습니다. 그래서 ‘어린이가 만드는 기후세상’ 교육이 시작됐습니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_a563162ddf0a4c57973190abd57bb7f5.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_795055197a774fe4b17b473994f471f5.png" class="pc" alt="">
+      </div>
+
+      <div class="cont cont2">
+        <p class="txt eb">기후위기는 아동권리의 위기</p>
+        <p class="txt">세이브더칠드런이 2021년 발간한 &#60;기후위기 속에서 태어나다(Born into the Climate Crisis)&#62;에 따르면, 2020년생 아동은 조부모 세대인 1960년생에 비해 평생 겪게 될 폭염 노출 빈도가 평균적으로 약 7배, 흉작을 경험할 빈도는 약 3배 높습니다. 또한 세이브더칠드런이 41개국 5만 4천 5백명 이상의 아동을 대상으로 진행한 아동 참여 의견 청취 프로젝트에서 콜롬비아 출신의 15세 아동은 기후위기를 이렇게 표현했습니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_75d8b073518e4bc8b124f76edf7afdf1.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_dca5d123f4484954970e9c6303cb5065.png" class="pc" alt="">
+        <p class="txt">이처럼 아이들은 점차 더욱 극심한 기후 재난을 경험하고 있지만, 기후위기가 아동의 삶과 권리에 미치는 영향을 알려주는 교육은 전무한 현실입니다. 2023년 발표한 &#60;기후위기 대응을 위한 아동·청소년의 참여방안 모색 연구&#62; 보고서에는 아동이 기후위기를 아동권리의 위기로 이해하고, 능동적으로 대처할 수 있도록 교육 받을 수 있는 시간이 부족함이 드러났습니다. ‘기후 문제가 심각하다고 느끼나요?’라는 질문에 국내 아동·청소년 660명 중 564명(85.4%)이 심각하다고 응답했습니다. 그러나 ‘기후위기 문제에 대해 잘 알고 있나요?’라는 질문에는 ‘보통’이라는 응답이 286명(43.3%)으로 가장 많았지만, 2022년 한 해 동안 기후위기 교육을 받은 시간은 1~5시간뿐이었습니다. 아동 스스로 기후위기에 대처하고 목소리를 내기 위해서는 아동이 기후위기와 기후위기가 아동권리에 미치는 영향에 대해 알 수 있어야 합니다. 이에 세이브더칠드런은 ‘어린이가 만드는 기후세상’을 개발하고, 2023년 전국 초등학교를 중심으로 교육을 시작했습니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_bb166d4fc878499fa5fd6de03e2d7427.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_3d7699dbd534489faf1d18bc2fe142b7.png" class="pc" alt="">
+      </div>
+
+      <div class="cont cont3">
+        <p class="txt"><b class="eb">아동 참여형 기후위기 교육 ‘어린이가 만드는 기후세상’</b>
+          ‘어린이가 만드는 기후세상’ 교육은 총 4차시(1차시당 약 45분)로 구성되어 있습니다. 수업에 참여한 아동은 이론적 지식과 함께 기후위기 관련 영상 시청, 아동 주도의 토론 활동 등을 통해 기후위기가 아동의 삶에 미치는 영향을 배우고, 실천 활동에도 참여합니다.
+          교육 후, 희망하는 교실에서는 ‘실천 학급’이 운영됐는데요. 기후위기 캠페인과 아나바다 장터, 비건 음식 만들기, 재활용 종이 만들기, 그리너리 재활용 캠페인과 같이 기후위기 대응을 위한 다양한 교내 활동이 이뤄졌습니다. 또한 개인별로 실천할 수 있는 텀블러 사용이나 점심시간에 불 끄기 등에 참여했습니다. 실천 학급을 통해 아이들의 일상에 기후위기에 대응하기 위한 행동이 스며들고, 아동은 직접 참여하며 작은 변화를 만드는 일을 경험합니다.
+        </p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_d0e1526c74994c278a463a535ca55cd6.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_6ffe6c9eba8e4f3cbb32588a3fb64ef6.png" class="pc" alt="">
+      </div>
+
+      <div class="cont cont4">
+        <p class="txt eb">선생님이 전하는 교육 성과</p>
+        <p class="txt">교육 이후에, 아동의 변화를 경험한 선생님 두 분의 이야기를 전합니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_951cc807acc7409fb0f207983eff3f4a.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_d7d296f864c54c26946db4cce79e83f8.png" class="pc" alt="">
+
+        <p class="txt eb q"><span class="c-r">Q1.</span> 교육에 만족한다는 학생들의 응답이 많았어요. 직접 학생들과 수업을 해보니 어떠셨어요?</p>
+        <p class="txt"><span class="c-r">김경미 선생님(인천 공촌초)</span> 일단 제공해 준 워크북과 지구본 만들기 자료가 좋았어요. 워크북이 재미없게 느껴질 수도 있는데, 궁금한 나라는 지구본에서 바로 찾아보면서 그 국가의 문제를 같이 살펴보니 아이들이 굉장히 즐겁게 참여했죠. 특히 워크북에 있는 QR코드로 영상을 함께 보니 ‘기후위기가 우리만의 문제가 아닌, 지구촌 전체의 문제구나’라는 걸 알게됐고요.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_afbf7a81b3ad4359a8808672624b2999.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_c80ff776e67d4493ad6ca075f23c9ab1.png" class="pc" alt="">
+        <p class="txt"><span class="c-r">이지애 선생님(서울 성동초)</span> 교육 이름부터 어린이가 만드는 거잖아요. 그래서 학생들이 주인공이 돼서 기후 행동을 할 수 있도록 의견을 수렴하려고 많이 노력 했어요. 환경교육에서 가장 기초가 되는 게 학생들 마음이 바뀌는 거라고 생각을 했거든요. 학생들 스스로 만들어가는 교육 과정이다 보니 그만큼 만족했던 것 같아요.</p>
+        <br>
+        <br>
+        <p class="txt eb q"><span class="c-r">Q2.</span> 교육 이후에 어떤 긍정적인 변화가 있었나요?</p>
+        <p class="txt"><span class="c-r">김경미 선생님</span> 교육 이후 좋은 변화가 많았어요. 몇몇 학생들이 바구니를 들고 재활용할 것을 수거하고 씻고, 분류하는 그리너리 동아리 활동을 했는데요. 이제는 이 활동이 학교 학생들에게 전체적으로 정착됐어요. 생활 속에서 마신 우유 팩을 헹궈서 버리는 것을 당연히 여기는 것처럼, 교육이 실천으로 바뀐 거죠. 다른 선생님께서도 교육을 해보시면 더 좋은 아이디어나 학생들과 실천할 일이 많이 생길 거예요.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_cdec8fc06dc34894a78133732bb37613.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_c59bfbb7506a4f2c98602f0f1c1e8944.png" class="pc" alt="">
+        <p class="txt"><span class="c-r">이지애 선생님</span> 일단은 학생들이 환경에 대한 관심이 많아졌어요. 어른들이 해결해야 될 문제라고 수동적으로 생각하기보다, 나부터 실천해야겠다고 적극적으로 변화했어요. 기후위기 문제를 우리들의 권리 문제이고, 우리 권리를 찾아야 한다는 생각을 하더라고요. 프로그램은 끝났지만, 저희 반 아이들에게는 끝나지 않았어요. (웃음) 최근에도 학교 쓰레기소각장을 조사해서 개선 의견을 만들고, 실제로 반영이 됐고요. 이 교육 이전에도 저희 반 친구들은 환경 교육을 하면 여름에는 에어컨을 딱 꺼버리는 거예요. 좀 참을 수 있다고 말하면서요. (웃음) 이렇게 어린이들은 변화가 즉각적으로 보여지기 때문에 어린이들에게 이런 교육은 필수적인 것 같아요.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_3de678cb37d344c5a409e449697fa4d2.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_c63e71fa9df94c6a9527c4f5e7873e94.png" class="pc" alt="">
+
+        <p class="txt eb q"><span class="c-r">Q3.</span> 교육에 관심 있는 분들께 추천의 말을 해주신다면요?</p>
+        <p class="txt"><span class="c-r">김경미 선생님</span> ‘어린이가 만드는 기후세상’ 교육의 참여 학급을 모집한다는 공지가 보이면 얼른 신청하세요! (웃음) 기후위기 교육이 아직 학교 내 정규교육이 아니어서 예산이 넉넉하지 않은 어려움이 있어요. 학교에서 교육을 운영하려면 예산이 꼭 필요한데 말이죠. 이렇게 훌륭한 교육 자료도 제공받으니, 꼭 신청해서 운영해 보시길 추천해요.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_5f25823645854e39b03375dd07f462ab.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_631ce3172eb64aff85ce23bae422c96c.png" class="pc" alt="">
+      </div>
+
+      <div class="cont cont5">
+        <p class="txt eb">유아를 위한 ‘기후위기와 아동권리 교육’ 프로그램 개발 및 ‘어린이가 만드는 기후세상’ 확산</p>
+        <p class="txt">교육에 참여한 아이들은 기후위기에 대해 이해하고, 기후위기를 아동권리와 자신의 삶과도 연결하여 인식할 수 있게 되었습니다. 2024년에는 ‘어린이가 만드는 기후세상’ 교육이 보다 많은 학생들을 만나, 꾸준한 인식의 변화와 실천 행동으로 이어질 수 있도록 지속해서 교육을 확대 운영할 계획입니다. 이와 더불어 ‘실천 학급’ 활성화를 통해 학교 간에도 좋은 사례를 공유하고, 실천 학급 활동이 확산될 수 있도록 지원할 계획입니다. 또한 유아 대상의 ‘기후위기와 아동권리’ 프로그램을 개발할 예정이며, 해당 교육은 내년 하반기부터 전국 유아교육기관을 대상으로 모집, 운영할 것입니다. 많은 관심과 참여 부탁드립니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_aaa5d68a205447308dd46ffbf68584e5.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_f290642078ff403c8aaffbcca2af7e73.png" class="pc" alt="">
+      </div>
+
+      <div class="writer">
+        <p><span class="c-r">글</span> 아동권리인식개선팀 조은경</p>
+        <p><span class="c-r">사진</span> 세이브더칠드런</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

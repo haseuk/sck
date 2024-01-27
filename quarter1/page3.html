@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../asset/font.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <style>
+    body, p { margin: 0; padding: 0; }
+    .upload-content {
+      margin: -18px -15px 0;
+      font-family: 'nanumsquare', sans-serif;
+      font-style: normal;
+      letter-spacing: -0.02em;
+      text-align: justify;
+      word-break: break-all;
+    }
+    .upload-content .up-inner {
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    .upload-content .up-inner img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .upload-content .up-inner .pc {
+      display: none;
+    }
+    .upload-content .up-inner .btn {
+      display: inline-block;
+    }
+    .upload-content .up-inner .t-tc {
+      text-align: center;
+    }
+    .upload-content .up-inner .c-r {
+      color: #da291c;
+    }
+    .upload-content .up-inner p {
+      color: #000;
+      line-height: 1.7;
+    }
+    .upload-content .up-inner .eb {
+      font-weight: 800 !important;
+    }
+    .upload-content .up-inner .tit {
+      font-size: 17px;
+      line-height: 30px;
+    }
+    .upload-content .up-inner .txt {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+    .upload-content .up-inner .txt-bg {
+      background-color: #ffecbb;
+    }
+    .upload-content .up-inner .org {
+      color: #ff6a39;
+    }
+    .upload-content .up-inner .red-b {
+      border-bottom: 1px solid #da291c !important;
+    }
+    .upload-content .up-inner .cont {
+      padding-top: 45px;
+      padding-right: 0px;
+      padding-bottom: 45px;
+      padding-left: 0px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #000;
+    }
+    .upload-content .up-inner .cont img {
+      margin-top: 25px;
+      margin-right: 0px;
+      margin-bottom: 25px;
+      margin-left: 0px;
+    }
+    .upload-content .up-inner .cont img:last-child {
+      margin-bottom: 0px;
+    }
+    .upload-content .up-inner .cont .info {
+      width: 330px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .upload-content .up-inner .cont3 {
+      text-align: center;
+    }
+    .upload-content .up-inner .cont3 p {
+      text-align: left;
+    }
+    .upload-content .up-inner .cont3 .latter {
+      width: 330px;
+    }
+    .upload-content .up-inner .cont4 {
+      padding-bottom: 0px;
+      border-bottom: 1px solid #da291c;
+    }
+    .upload-content .up-inner .c-top {
+      padding-top: 30px;
+      padding-right: 0px;
+      padding-bottom: 30px;
+      padding-left: 0px;
+      box-sizing: border-box;
+      border-top: 1px solid #da291c;
+      border-bottom: 1px solid #da291c;
+    }
+    .upload-content .up-inner .writer {
+      padding-top: 20px;
+      padding-right: 0px;
+      padding-bottom: 40px;
+      padding-left: 0px;
+      box-sizing: border-box;
+    }
+    .upload-content .up-inner .writer p {
+      font-size: 13px;
+      line-height: 23px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+      font-weight: 700;
+    }
+    .upload-content .up-inner .cont5 {
+      border-bottom: 0;
+    }
+    .upload-content .up-inner .cont5 img {
+      margin-top: 0px;
+    }
+    .upload-content .up-inner .cont5 .txt {
+      font-size: 13px;
+      line-height: 20px;
+    }
+    .upload-content .page3 {
+      background-color: #e1ded3;
+    }
+    @media screen and (min-width: 768px) {
+      .upload-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .upload-content .up-inner {
+        padding: 50px;
+      }
+      .upload-content .up-inner .mo {
+        display: none;
+      }
+      .upload-content .up-inner .pc {
+        display: inline-block;
+      }
+      .upload-content .up-inner .txt {
+        font-size: 17px;
+        line-height: 30px;
+      }
+      .upload-content .up-inner .cont {
+        padding-top: 45px;
+        padding-right: 0px;
+        padding-bottom: 45px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .cont img {
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+      }
+      .upload-content .up-inner .cont .info {
+        width: 700px;
+      }
+      .upload-content .up-inner .cont3 .latter {
+        width: 700px;
+      }
+      .upload-content .up-inner .c-top {
+        padding-top: 45px;
+        padding-right: 0px;
+        padding-bottom: 45px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .writer {
+        padding-top: 20px;
+        padding-right: 0px;
+        padding-bottom: 40px;
+        padding-left: 0px;
+        box-sizing: border-box;
+      }
+      .upload-content .up-inner .writer p {
+        font-size: 13px;
+        line-height: 23px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 15px;
+        font-weight: 700;
+      }
+      .upload-content .up-inner .cont5 {
+        border-bottom: 0;
+        padding-top: 0px;
+      }
+      .upload-content .up-inner .cont5 img {
+        margin-top: 80px;
+      }
+      .upload-content .up-inner .cont5 .txt {
+        font-size: 17px;
+        line-height: 30px;
+      }
+      .upload-content .up-inner .writer {
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .writer p {
+        font-size: 17px;
+        line-height: 30px;
+      }
+    }
+  </style>
+  <div class="upload-content ">
+    <div class="up-inner page3">
+      <div class="cont cont1 c-top">
+        <p class="eb tit">다가오는 2월 6일은 튀르키예·시리아 대지진이 발생한지 일 년이 되는 날입니다. 전 세계가 구조 작업을 지켜보며,한 사람이라도 더, 한 아이라도 더 구조되길 기도했던 시간이 지나고, 튀르키예 이재민을 위한 임시 정착촌에는 아이들의 꿈과 희망이 다시 자라고 있습니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_8ae6140527a846b5b44d0aba0320de58.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_59d2b4568f124552b576ad7dc502bfa0.png" class="pc" alt="">
+      </div>
+      <div class="cont cont2">
+        <p class="tit eb">집도 미래도 잃은 아이들</p>
+        <p class="txt">
+          100여 년 만에 일어난 대지진이었습니다. 튀르키예 남부 및 시리아 북부에 규모 7.8과 7.7의 지진이 잇따라 강타했습니다. 지진으로 약 5만 명 이상이 사망했고, 현재까지 최소 78만 7천 명(2023.11.30 기준)이 텐트나 임시 거주지에서 생활하고 있으며, 피해 지역에는 최소 460만 명의 아동이 거주하는 것으로 파악됩니다. 특히 하타이, 가지안테프, 아디야만과 카라만마라쉬 지역이 큰 피해를 입었는데 집은 물론 병원, 학교와 같은 주요 시설이 모두 무너졌습니다. 이러한 환경에서 아동들은 가족을 잃거나 임시 거주지에서 폭력, 착취 등에 노출되거나 지진 트라우마 치료는 물론 배움이 중단되는 문제를 겪습니다.<br>
+          지진 피해 복구에는 오랜 시간이 걸립니다. 집과 가족을 잃은 고통이 트라우마로 남은 아동의 정서 회복도 오랜 시간과 관심이 필요합니다. 하지만 한 텐트에 20명 이상이 생활하는 임시 거주지는 아동에게 편안한 공간이 아닙니다. 부모 없이는 화장실 가기도 두려워진 아이들에게는 안전함을 느낄 수 있는 공간, 미래를 위해 배움을 이어갈 수 있는 아동친화공간이 필요합니다.
+        </p>
+        <br>
+        <br>
+        <p class="tit eb">인도주의 100년의 경험이 아이를 구한다</p>
+        <p class="txt">
+          세이브더칠드런은 1919년부터 지금까지 전쟁과 재난 속 아동과 가족을 구하고, 지원해 왔습니다. 전 세계 30개 회원국이 협력하여 116개국에서 신속하고 투명한 인도적지원을 펼치고 있습니다. 재난 발생시, 100년 넘게 축적된 노하우를 기반으로 골든타임 72시간 내에 초기 긴급대응에 착수하여, 아동과 가정의 위급상황을 지원하고 있습니다. 아동권리NGO로서 심리·정서적 지원과 교육을 위한 아동친화공간 및 임시학습공간 운영으로 재난 이후의 회복까지 지원합니다.<br>
+          튀르키예·시리아 대지진 피해 지역에도 초기의 긴급 구호 지원, 아동보호, 임시 정착촌 건설까지 지원을 지속하고 있습니다. 튀르키예와 시리아 지진 피해지역에 식량과 식수, 긴급 보호소, 긴급 생활비 지원, 아동의 정신건강과 심리·사회적 안정을 지원했으며, 시리아 북부의 12개 지역(알레포, 이들리브 등)에 임시 보호소를 설치했습니다. 보호소에 의약품, 식수, 비식량물자를 제공했으며, 아동친화공간을 만들어 아동의 정신건강 및 심리·사회적 지원 활동을 현재까지 진행 중입니다.
+        </p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_1399265c750546f88210e16cc8176308.png" class="mo info" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_a67e0cd1801f4da7bccccb06d6259247.png"  class="pc info" alt="">
+      </div>
+      <div class="cont cont3">
+        <p class="tit eb">아이가 다시 꿈 꿀 수 있는 ‘한국-튀르키예 우정 마을’을 세우기까지</p>
+        <p class="txt">지진 발생 직후인, 2023년 3월 초, 세이브더칠드런 코리아는 한국 정부가 지원하는 약 1천만 불 규모의 튀르키예 임시 정착촌 조성 및 이재민 지원 사업에서 세 개의 NGO를 대표하는 리드 NGO로 선정됐습니다. 이 컨소시엄 사업을 총괄한 세이브더칠드런 코리아 인도적지원팀 장설아 팀장에게 우정 마을 건설 과정을 들어봤습니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_15bb8f1cfc7b4ce682e5912554fa00a0.png" class="mo latter" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_b9332eb1d0b64154b266947cd12351ca.png" class="pc latter" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_b252444ec5864d7fa4e2f7391e426cea.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_af0f86d8c623478699b8753d245d3b2b.png" class="pc" alt="">
+      </div>
+      <div class="cont cont4">
+        <p class="txt">우정 마을에는 이재민 아동 상황에 맞는 공간을 만들고, 심리·사회적 지원을 하고 있습니다. <span class="txt-bg">튀르키예 교육부와의 협력을 통해 아동·청소년, 특별한 학습 장애가 있는 아동에게까지 포괄적인 교육을 제공하고 있습니다. 장애, 비장애 아동 모두가 어울려 놀 수 있는 놀이터를 만들었고, 사례관리실(2개)에는 심리치료사도 배치했습니다.</span> 현지 교사들이 트라우마를 겪는 아동을 이해하고, 도울 수 있도록 올해부터는 교사 대상 CP/MHPSS(아동 보호 및 심리사회적 지원) 교육을 진행할 예정이며 학습키트도 제공했습니다. 이를 통해 임시 정착촌 내 아이들의 회복을 전문적이고 지속적으로 돕기 위함입니다. 튀르키예 아동에게 따뜻한 집과 책상, 웃음을 되찾아 준 후원자님 감사합니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_0879b08d6f1042d7b6405da42cf2a8e5.png" class="mo info" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_0cc581711ae04ca99d327595879872d0.png" class="pc info" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_bcf358e856c04dccb5bcb53ce7ebb612.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_85fa78c1ad554a0abe90397956396a07.png" class="pc" alt="">
+
+        <div class="writer">
+          <p><span class="c-r">글</span> 미디어팀 문지은</p>
+          <p><span class="c-r">사진</span> 세이브더칠드런</p>
+        </div>
+      </div>
+      
+      <div class="cont cont5">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_0d4c1aab2c1a49a6905a776fa90c501e.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_1d8b4ba05d4e40e7bff2c72f5d27cfc2.png" class="pc" alt="">
+        <p class="txt t-tc">
+          다시 꿈꾸게 하는 집,<br>
+          Dreams come true!
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

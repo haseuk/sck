@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../asset/font.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <style>
+    body, p { margin: 0!important; padding: 0!important; }
+    .upload-content {
+      margin: -18px -15px 0;
+      font-family: 'nanumsquare', sans-serif;
+      font-style: normal;
+      letter-spacing: -0.02em;
+      text-align: justify;
+      word-break: break-all;
+    }
+    .upload-content .pc {
+      display: none;
+    }
+    .upload-content .eb {
+      font-weight: 800 !important;
+    }
+    .upload-content .up-inner {
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    .upload-content .up-inner img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .upload-content .up-inner .btn {
+      display: inline-block;
+    }
+    .upload-content .up-inner .t-tc {
+      text-align: center;
+    }
+    .upload-content .up-inner .c-r {
+      color: #da291c;
+    }
+    .upload-content .up-inner p {
+      color: #000;
+      line-height: 1.7;
+    }
+    .upload-content .up-inner .tit {
+      font-size: 17px;
+      line-height: 30px;
+    }
+    .upload-content .up-inner .txt {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+    .upload-content .up-inner .txt-bg {
+      background-color: #ffecbb;
+    }
+    .upload-content .up-inner .red-b {
+      border-bottom: 1px solid #da291c !important;
+    }
+    .upload-content .up-inner .cont {
+      padding-top: 5px;
+      padding-right: 0px;
+      padding-bottom: 20px;
+      padding-left: 0px;
+      margin-top: 60px;
+      box-sizing: border-box;
+      border-top: 1px solid #cccccc;
+    }
+    .upload-content .up-inner .cont .title {
+      font-size: 16px;
+      line-height: 28px;
+      color: #da291c;
+    }
+    .upload-content .up-inner .cont img {
+      margin-top: 5px;
+      margin-right: 0px;
+      margin-bottom: 5px;
+      margin-left: 0px;
+    }
+    .upload-content .up-inner .cont .link img {
+      margin: 0px;
+    }
+    .upload-content .up-inner .cont1,
+    .upload-content .up-inner .cont2,
+    .upload-content .up-inner .cont3,
+    .upload-content .up-inner .cont4,
+    .upload-content .up-inner .cont5 {
+      border-top: 1px solid #da291c;
+    }
+    .upload-content .up-inner .cont4 .link {
+      width: 142px;
+      height: 40px;
+    }
+    .upload-content .up-inner .cont5 .link {
+      width: 174px;
+      height: 40px;
+    }
+    .upload-content .c-top {
+      padding-top: 50px;
+      padding-right: 15px;
+      padding-bottom: 40px;
+      padding-left: 15px;
+      box-sizing: border-box;
+      position: relative;
+      text-align: center;
+      background-color: #ebebe4;
+    }
+    .upload-content .c-top img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .upload-content .c-top p {
+      text-align: left;
+    }
+    .upload-content .c-top .txt {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+    .upload-content .c-top .link {
+      width: 194px;
+      height: 40px;
+      margin-top: 25px;
+      display: inline-block;
+    }
+    .upload-content .c-top .link img {
+      width: 100%;
+      margin-bottom: 0px;
+    }
+    @media screen and (min-width: 768px) {
+      .upload-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .upload-content .pc {
+        display: inline-block;
+      }
+      .upload-content .mo {
+        display: none;
+      }
+      .upload-content .up-inner {
+        padding: 50px;
+      }
+      .upload-content .up-inner .txt {
+        font-size: 17px;
+        line-height: 30px;
+      }
+      .upload-content .up-inner .cont {
+        padding-top: 45px;
+        padding-right: 0px;
+        padding-bottom: 45px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .cont img {
+        margin-top: 30px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+      }
+      .upload-content .up-inner .cont .msg {
+        max-width: 700px !important;
+      }
+      .upload-content .up-inner .cont {
+        padding-top: 5px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        margin-top: 65px;
+      }
+      .upload-content .up-inner .cont .title {
+        font-size: 17px;
+        line-height: 30px;
+      }
+      .upload-content .up-inner .cont img {
+        margin-top: 5px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+      }
+      .upload-content .up-inner .cont .link img {
+        margin: 0px;
+      }
+      .upload-content .up-inner .cont1,
+      .upload-content .up-inner .cont2,
+      .upload-content .up-inner .cont3,
+      .upload-content .up-inner .cont4,
+      .upload-content .up-inner .cont5 {
+        border-top: 1px solid #da291c;
+      }
+      .upload-content .up-inner .cont4 .link {
+        width: 251px;
+        height: 65px;
+      }
+      .upload-content .up-inner .cont5 .link {
+        width: 305px;
+        height: 65px;
+      }
+      .upload-content .c-top {
+        padding-top: 100px;
+        padding-right: 50px;
+        padding-bottom: 110px;
+        padding-left: 50px;
+      }
+      .upload-content .c-top img {
+        margin-bottom: 40px;
+      }
+      .upload-content .c-top .txt {
+        font-size: 20px;
+        line-height: 32px;
+      }
+      .upload-content .c-top .link {
+        width: 380px;
+        height: 65px;
+        margin-top: 40px;
+      }
+    }
+  </style>
+  <div class="upload-content ">
+    <div class="c-top">
+      <img src="https://www.sc.or.kr/upload/Editor/2024/editor_34d1b26290e64c34ad5daf471c206034.png" class="mo" alt="">
+      <img src="https://www.sc.or.kr/upload/Editor/2024/editor_af03022d5dae4356b058e41233295ab9.png" class="pc" alt="">
+      <p class="txt eb">2024 세이브더칠드런 디지털 굿즈 출시</p>
+      <p class="txt">
+        올해 첫 출시된 세이브더칠드런 디지털 굿즈의 테마, ‘세이브더칠드런 크루’는 종교, 국적, 인종을 초월해 모든 아동이 온전히 권리를 누릴 수 있도록 행동하는 우리 모두를 칭합니다.<br>
+        전 세계 아동을 매일의 일상에서 지키는 세이브더칠드런 크루에 합류해 보세요! 휴대폰, 데스크탑, 태블릿, 스마트 워치 배경화면과 2024 디지털 스케줄러, 그리고 세이브더칠드런 크루로서 생각해 볼 만한 12개의 질문을 담은 질문노트도 제공됩니다.
+      </p>
+      <a href="https://www.sc.or.kr/digitalgoods/" class="btn link">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_fc3abe169485489196924e41adc38e26.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_ce0cb2e173ae49419c7ac2e283baffcd.png" class="pc" alt="">
+      </a>
+    </div>
+    <div class="up-inner page9">
+
+      <div class="cont cont2">
+        <p class="title eb">국내사업</p>
+        <br>
+        <br>
+        <p class="txt eb">자립준비청년 자립지원사업 특별강연</p>
+        <p class="txt">하나금융그룹 후원으로 진행되는 자립준비청년 자립지원사업은 참여 청소년의 전문기술 역량 향상을 위해 매월 생활장학금을 지원하고 있습니다. 생활장학금 지원과 더불어 사회혁신 벤처기업인 이노소셜랩과 2023년 12월부터 청소년을 위한 맞춤형 특별 강연을 3회 진행했습니다. </p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">아동양육시설 환경개보수사업 ‘KB증권 무지개교실’ 완공식</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_f67ce22952fc4a5198c6c55aa1ec8051.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_75d9631b176442bf8fa43518815ce7aa.png" class="pc" alt="">
+        <p class="txt">KB증권 후원으로 부산지역 아동양육시설 새들원에 아동이 안전하고 친환경적인 생활환경 조성을 위한 시설 개보수 후 완공식을 개최했습니다. 이번 완공식에서는 아동 의견을 반영해 새롭게 변화된 시설과 환경을 둘러보고, 새들원 아동들의 만족도와 후기를 공유하는 시간을 가졌습니다.  </p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">‘저소득 조부모가정 아동 지원 DREAM 사업’ 평가회</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_de6c05ad4510424c93989f7242dd2279.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_1bd84eff85e94113be139170e653982a.png" class="pc" alt="">
+        <p class="txt">2023년 11월 30일, 협력 기관 45개소와 사업 평가회를 실시했습니다. 이번 평가회에서는 가정위탁지원제도에 대해 배우고 지원사업을 통한 조손가정 아동과 지역사회 변화를 공유했습니다. </p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">‘삼성 다문화청소년 스포츠 클래스’ 출범식</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_3b9048f258b247a4983b0cfb058929db.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_2cddbe24da384fa298388727a2f12b5b.png" class="pc" alt="">
+        <p class="txt">삼성의 후원과 사회복지공동모금회의 지원으로 다문화청소년의 자존감 향상 및 긍정적 또래관계 형성을 위한 ‘삼성 다문화청소년 스포츠 클래스’ 사업을 시작했습니다. 2023년 11월 22일 삼성물산 래미안 갤러리에서 출범식을 실시하고, 제일기획과 보건복지부, 사회복지공동모금회, 세이브더칠드런 등 관계 부처와 전문기관이 모여 협약을 체결했습니다.</p>
+      </div>
+
+      <div class="cont cont3">
+        <p class="title eb">국제사업</p>
+        <br>
+        <br>
+        <p class="txt eb">신생아를 살리는, 케냐 나이로비 모자보건사업</p>
+        <p class="txt">케냐 수도 나이로비의 열악한 보건서비스 환경을 개선하고, 임시정착민도 이용할 수 있는 필수 모자보건서비스의 품질과 접근성을 높이기 위해 보건 현황이 가장 열악한 2개 구에 모자보건사업을 착수했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">코트디부아르 청소년 직업훈련 지원사업</p>
+        <p class="txt">한국국제협력단(KOICA) 협력 사업이 종료된 아방그루, 봉구아누 지역에서 학교 밖 청소년 850명의 창업과 취업을 지원했습니다. 훈련생들에게 미용, 목공, 재봉, 오토바이 수리 등 직업훈련에 사용되는 물품과 창업에 필요한 물품을 전달했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">방글라데시 사트키라 지역 안전한 식수 지원</p>
+        <p class="txt">방글라데시 사트키라 지역에 탄소저감형 정수시설 5기 설치 및 가동을 통해 안전한 식수 공급을 개시했습니다. 기후변화로 인해 깨끗한 식수에 접근하기 어려웠던 아동과 주민들이 마음놓고 마실 수 있는 식수를 공급받게 되었습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">미얀마 라카인 주 긴급재난사업</p>
+        <p class="txt">2023년 한국국제협력단(KOICA) 인도적지원 민관협력 프로그램의 일환으로 미얀마 라카인 주에서 2023년 5월에 발생한 사이클론 모카 피해주민들 대상 긴급재난사업을 6월부터 10월까지 진행했습니다. 약 9천여 명의 아동 및 가정을 위해 쉘터키트, 위생키트, 비식량물자키트를 지원하고 일상으로의 회복력 증진을 도왔습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">2023-24 방글라데시 로힝야 난민 거주 지역 아동보호 및 회복력 강화 사업</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_e428527b520f4385a411c7192d4bfc58.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_75242e7385c64345985a78bf203204e8.png" class="pc" alt="">
+        <p class="txt">2017년부터 방글라데시 로힝야 난민 아동의 안전한 성장 환경 마련을 지원하고 있습니다. 사례관리, 대안 돌봄 가정 발굴 및 교육, 다목적 아동청소년 센터 운영, 지역 주민 위원회의 아동 보호식별 활동 및 캠페인 지원 등 다양한 연령과 층위에 걸쳐 아동보호를 옹호 및 실천하고 있습니다.</p>
+      </div>
+
+      <div class="cont cont4">
+        <p class="title eb">권리옹호</p>
+        <br>
+        <br>
+        <p class="txt eb">‘지구를 구하는 지구페스타’ 개최</p>
+        <p class="txt">2023년 12월 16일, 아동부터 성인까지 누구나 쉽고 재미있게 기후위기를 배우고, 지구 지키기를 실천해 볼 수 있는 ‘지구페스타’를 개최했습니다. 지구기후팬클럽 어셈블이 준비한 작품 전시와 다양한 체험 프로그램, 아티스트 공연과 퀴즈쇼 등 이벤트를 진행했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">‘발달장애·느린학습자 아동 참여 이야기’ 출간</p>
+        <p class="txt">참여의 기회를 제대로 보장받지 못하는 발달장애·느린학습자 아동을 지원할 인적(교육자) 네트워크를 지역별로 구성, 기획부터 실행까지 전 과정에 아동이 직접 참여하는 프로젝트를 추진했습니다. 해당 사례들을 널리 알리고자 아동 참여 프로젝트 사례집 ‘발달장애·느린학습자 아동 참여 이야기’를 발간했습니다. </p>
+        <br>
+        <a href="https://www.sc.or.kr/news/reportView.do?NO=72078" class="btn link" target="_blank">
+          <img src="https://www.sc.or.kr/upload/Editor/2024/editor_bb6174e0f3ee48f881573d11616542d2.png" class="mo" alt="">
+          <img src="https://www.sc.or.kr/upload/Editor/2024/editor_7dd193ef13f4405193ea1ed75ded0e21.png" class="pc" alt="">
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">유엔에 보내는 아동보고서 사이트 오픈</p>
+        <p class="txt">2023년 12월 7일, 코로나19 팬데믹 3년과 아동불평등에 대한 아동의 목소리를 담은 ‘다르게 온 재난. 팬데믹 3년, 아이들의 안녕을 묻다’ 사이트를 열었습니다. 사이트에 담긴 564명 아이들의 목소리는 2025년 유엔아동권리협약 대한민국 정부 심의에 맞추어 유엔아동권리위원회에 제출될 예정입니다.</p>
+        <br>
+        <a href="https://childrenreport.sc.or.kr/?_gl=1*1kfnj9k*_ga*MTQwMzk3NzIwMS4xNjk0MDYzMjEz*_ga_TJYY12BRKS*MTcwMjEzMjk2Mi4xMzEuMS4xNzAyMTMzMTI4LjU5LjAuMA..*_ga_WGQHVMDDR4*MTcwMjEzMjk2Mi4xMjUuMS4xNzAyMTMzMTI4LjU5LjAuMA..*_gcl_au*NTc3ODU5MjI1LjE3MDE5MjgxOTA.&_ga=2.205507856.1242918764.1702113807-1403977201.1694063213" class="btn link" target="_blank">
+          <img src="https://www.sc.or.kr/upload/Editor/2024/editor_877b923191034993855375073a59aae0.png" class="mo" alt="">
+          <img src="https://www.sc.or.kr/upload/Editor/2024/editor_66ab46320dea4343aad74d1648657346.png" class="pc" alt="">
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">‘아동사망검토제도 토론회’ 개최</p>
+        <p class="txt">2024년 1월 11일, 자녀 살해 후 자살 대응을 위한 캠페인의 일환으로 국회의원회관에서 인재근 국회의원, 사단법인 온율과 함께 아동사망검토제도 도입을 위한 토론회를 개최했습니다. 카톨릭대학교 산학협력단과 진행한 ‘아동사망검토제도 도입방안 연구’를 중심으로 아동사망검토제도를 실시하고 있는 해외 사례를 검토하고 법체계 등 제도 도입 방안을 논의했습니다.</p>
+      </div>
+
+      <div class="cont cont5">
+        <p class="title eb">후원소식</p>
+        <br>
+        <br>
+        <p class="txt eb">한화생명, 인도네시아 소셜커뮤니티센터 완공식</p>
+        <p class="txt">한화생명과 함께 인도네시아 여성가족부와 소셜커뮤니케이션 푸스파센터 조성사업을 진행했습니다. 2023년 11월 29일, 자카르타 여성가족부에서 푸스파센터 완공식이 개최되었습니다. 푸스파센터를 통해 여성과 청소년의 정신 건강 및 심리 사회적 지원을 위한 활동을 주도할 예정입니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">티웨이항공, 기내 모금 ‘기브투게더 캠페인’ 5주년 기념행사</p>
+        <p class="txt">티웨이항공은 2018년부터 세이브더칠드런과 함께하는 기내 모금 ‘기브투게더 캠페인’을 통해 아동을 위한 따뜻한 지원을 이어오고 있습니다. 올해로 5주년을 맞이하여 진행된 기념행사에서는 새로운 디자인의 기내 모금 봉투를 선보였으며, 앞으로 더욱 넓게 뻗어 나갈 나눔 활동에 대한 기대를 모았습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">KB캐피탈 Road Safety 세레모니</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_d317b44a4452408cb94508ffab6a8b95.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_8d9198873af54af0a12ce499888858c2.png" class="pc" alt="">
+        <p class="txt">KB캐피탈과 함께 인도네시아 자카르타 학교 두 곳에 스쿨세이프티존을 구성했습니다. 자카르타 내 경찰청, 교육청, 도로교통과 등의 협력으로 사업이 진행됐으며, 도로 위 횡단보도 및 스쿨존 표시, 교통 표지판 등을 설치하고, 교통안전 및 사고 예방을 위한 교육 프로그램을 진행했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">KDB생명 취약계층 아동 문화체험 지원</p>
+        <p class="txt">KDB생명은 세이브더칠드런과 함께 코로나19 종식 이후에도 문화체험 혜택을 누리지 못하고 있는 서울 용산구 취약계층 아동 100여 명에게 문화체험 이벤트 ‘오늘은 특별한 하루’를 지원했습니다. 애니메이션 영화를 관람하고 직업체험활동을 진행하여 아동의 큰 호응을 얻었습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">HMM, 어린이병원 환아 지원</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_256135ca88ce46bf858488271a91fd06.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_f81f3764dc224976aebeab8f65cdc4ce.png" class="pc" alt="">
+        <p class="txt">HMM과 세이브더칠드런은 부산대어린이병원 환아를 위한 ‘아동보건의료지원사업’을 진행하고 있습니다. 사고 혹은 만성 질병으로 장기 치료 중인 저소득가정 환아를 위한 의료비 및 필요 물품을 지원함으로써 미래 주역인 어린이들이 치료비 걱정없이 진료받을 수 있는 여건을 조성하고자 합니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">제2회 아너스클럽 연찬회 개최 및 신규 회원 위촉</p>
+        <p class="txt">2023년 12월 5일, 제2회 아너스클럽 연찬회를 개최했습니다. 기존 아너스클럽 회원과 회원 가족 등 50여 명이 참석했으며, 2023년 신규회원 고영선, 이지원 후원자의 위촉식을 함께 진행했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">아동을 살리는 가게 위세이브, 신한마이샵 프로모션</p>
+        <p class="txt">㈜신한카드와 업무협약을 맺고 ‘아동을 살리는가게’ 위세이브의 신한마이샵 프로모션을 진행합니다. 신한마이샵은 소상공인을 위한 사회공헌 프로그램으로 참여 업체에서 소비자가 신한카드를 이용하면 정해진 만큼 캐시백 혜택을 받을 수 있습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">백일첫돌기부 리뉴얼 및 리워드 증정 프로모션</p>
+        <p class="txt">‘좋아서하는기념일’ 캠페인의 백일첫돌기부가 임신부터 아이의 탄생, 처음 뒤집은 날, 백일 등 모든 소중한 성장의 순간들을 기념할 수 있는 후원으로 새단장했습니다. 30만 원 이상 후원해 주시는 분께는 거즈순면 블랭킷에 이름을 자수하여 선물로 드립니다</p>
+        <br>
+        <a href="https://www.sc.or.kr/babymoment/" class="btn link" target="_blank">
+          <img src="https://www.sc.or.kr/upload/Editor/2024/editor_8a7a7d9dc9e54eb89eac699c6a4589fa.png" class="mo" alt="">
+          <img src="https://www.sc.or.kr/upload/Editor/2024/editor_423cf6c6e5db46278bea433cde51aa3d.png" class="pc" alt="">
+        </a>
+      </div>
+
+      <div class="cont cont6">
+        <p class="title eb">지역본부&시설 소식</p>
+        <br>
+        <br>
+        <p class="txt c-r">아동권리센터</p>
+        <p class="txt eb">서울1아동권리센터</p>
+        <p class="txt">2024년 3월부터 서울, 경기도 소재 초등학교와 아동복지시설 10개소에서 ‘아동이 만드는 안전한 통학로 사업’을 진행합니다. 아동 모니터링단이 직접 자신과 관련된 문제에 관심을 갖고 해결과 변화의 주체로 성장해나갈 예정입니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">인천/경기1아동권리센터</p>
+        <p class="txt">변함없이 소중한 후원을 이어나가 주시는 한미반도체, 치킨매니아, 걸리버서점 파트너십 기업 3곳에 감사패를 제작하여 전달했습니다. 감사패는 5년 이상 후원을 지속하고 누적 후원금이 5천만 원 이상인 기업을 대상으로 선정하여 전달되었습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">경기2아동권리센터</p>
+        <p class="txt">2023년 11월 24일, 광명시청 - 경기도광명교육지원청 - 한국어린이집총연합회 광명시지회와 다자간 협약을 진행했습니다. 아동 대상 권리교육, 아동참여위원회 활동 및 홍보사업 등 그 외 지자체 협력사업 등을 확산할 예정입니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">새움센터</p>
+        <p class="txt">2023년 12월 22일, 아너스클럽 회원들이 아동·청소년의 꿈을 이룰 수 있도록 지원한 후원물품이 따뜻한 크리스마스 선물 전달식을 통해 새움센터에 전달되었습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">전북아동권리센터</p>
+        <p class="txt">2023년 12월, 전주희망포럼과 함께하는 ‘희망산타 대작전’ 기부 이벤트를 통해 학대피해아동 생활시설에 크리스마스 파티용품 및 간식꾸러미를 지원했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">대전아동권리센터</p>
+        <p class="txt">2023년 12월 13일, 우리금융캐피탈과 함께 기후위기 대응을 위한 지역아동센터 지원사업으로 어린이통학용 전기차량을 서울 1개소, 충남1개소에 지원했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">광주아동권리센터</p>
+        <p class="txt">2023년 12월 9일, 가족돌봄청소년 통합지원사업 ‘우미 희망케어’의 2회차 자조모임을 진행했습니다. 가족돌봄청년으로서 활발한 강연을 펼치고 있는 조기현 작가님의 특강과 더불어, 현재 돌봄청년에 대한 정책과 지원사항에 대해 이야기하는 시간을 가졌습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">대구아동권리센터</p>
+        <p class="txt">지역 아동의 놀 권리를 위해 경상북도와 경주시, 영주시와의 협약하여 지역 내 놀이터를 개장했습니다. 더불어 울산시에는 ㈜씨티알의 후원으로 꿈을 펼쳐나갈 아이들을 응원하고자 놀이터를 만들었습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">울산아동권리센터</p>
+        <p class="txt">지역 내 아동권리증진을 위한 후원자 모임인 세이버스클럽을 운영하여, 예체능꿈나무 아동의 재능지원과 조손가정의 위시물품을 지원하는 기획 사업을 진행하고 평가회를 가졌습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">부산아동권리센터</p>
+        <p class="txt">주택도시보증공사(HUG)의 후원으로 부산과 전북 한부모 시설 3곳에 주거환경개선, 긍정적으로 아이 키우기 부모교육, 정서역량강화 지원사업을 실시했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">경남아동권리센터</p>
+        <p class="txt">2023년 12월 4일, 김해시 놀이환경진단사업에 참여한 시민조사단 2명과 사업을 진행한 세이브더칠드런 남부지역본부가 ‘꿈이 이루어지는 따뜻한 행복도시 김해’를 빛낸 2023년 연말 유공 시민 단체 표창을 받았습니다.</p>
+      </div>
+
+      <div class="cont cont7">
+        <p class="txt c-r">아동보호전문기관</p>
+        <p class="txt eb">서울중부아동보호전문기관</p>
+        <p class="txt">2023년 12월 20일, 마포구·서대문구·용산구 전담 공무원, 경찰과 함께 간담회를 진행했습니다. 우수사례를 공유하며 아동학대 예방 및 대응 시스템의 현황과 과제를 파악하고 개선하기 위해 소통하는 시간을 가졌습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">인천광역시아동보호전문기관</p>
+        <p class="txt">2023년 10월 19일~12월 6일에 걸쳐 총 3회로 연세대학교 객원교수 어주경 교수님과 해결중심이론 직원 역량강화교육을 실시했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">울산광역시아동보호전문기관</p>
+        <p class="txt">2023년 11월 29일, 울산 아동학대예방사업의 현재와 미래를 주제로 아동학대 예방포럼을 실시했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">부천시아동보호전문기관</p>
+        <p class="txt">2023년 12월 18일, 보건복지부 성과평가를 대비하여 자체점검 이후 경기도거점아동보호전문기관 거점심리지원팀을 통해 치료실 운영의 전반적인 평가와 컨설팅을 진행했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">대전서부아동보호전문기관</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_a495c089b30b4b4e9bfb4bf8ba26dbd2.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_0773a39523474f439ab07ec05c735a9e.png" class="pc" alt="">
+        <p class="txt">2023년 11월 21일, 도담도담 부모교육 경험이 있는 보호자 20명 대상으로 고려대학교대학원 아동코칭학과 이재연 교수님과 ‘부모가 1% 바뀌면 자녀는 100% 바뀐다’ 주제로 부모교육 특강을 진행했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">안산시아동보호전문기관</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_948fc62a49a24d829ca3852c54f9287b.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_a873d4ea727242bdb2008a1856ec1f3e.png" class="pc" alt="">
+        <p class="txt">2023년 11월 19일, 아동학대예방의 날을 맞이해 안산 시민의 아동학대 인식이 개선될 수 있도록 안산시 내 13개의 유관기관과 협력하여 아동학대예방 체험형 캠페인 ‘아이 NEED YOU, 당신이 아이의 유일한 희망지킴이’를 진행했습니다.</p>
+      </div>
+
+      <div class="cont cont8">
+        <p class="txt c-r">가정위탁지원센터</p>
+        <p class="txt eb">부산광역시가정위탁지원센터</p>
+        <p class="txt">2023년 12월 2일, 대학, 취업, 독립 등 새로운 시작을 맞이할 19세 아동들에게 맞춤형 자립 토크콘서트를 진행했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">대구광역시위탁지원센터</p>
+        <p class="txt">2023년 12월 9일, 중학생 위탁아동을 대상으로 멘토강의 ‘자립이란 무엇인가’를 진행했습니다. 강의 후, 자립이 홀로서기가 아닌 함께서기라는 마음을 나누는 시간을 가졌습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">전북가정위탁지원센터</p>
+        <p class="txt">2023년 12월 5일, 위탁부모 및 관계자 150명을 대상으로 ‘함께자란 20년 함께가는 가정위탁’을 주제로 송년의 날 행사를 진행했습니다.</p>
+        <br>
+        <br>
+        <br>
+        <p class="txt eb">충북가정위탁지원센터</p>
+        <p class="txt">2023년 11월 29일 충주, 12월 7일 청주에서 한 해 동안 위탁아동 보호와 양육에 애써주신 위탁부모 및 위탁아동을 초대하여 송년행사를 실시했습니다.</p>
+      </div>
+
+      <div class="cont cont9">
+        <p class="txt c-r">쉼터</p>
+        <p class="txt eb">울산신나는아동쉼터</p>
+        <p class="txt">불가리의 후원으로 울산 신나는아동쉼터의 이전지 리모델링을 진행했습니다. 쉼터로 분리된 학대피해아동이 안전하고 편안하게 지낼 수 있는 새로운 공간이 마련됐습니다.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

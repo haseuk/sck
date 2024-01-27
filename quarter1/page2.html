@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../asset/font.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <style>
+    body, p { margin: 0; padding: 0; }
+    .upload-content {
+      margin: -18px -15px 0;
+      font-family: 'nanumsquare', sans-serif;
+      font-style: normal;
+      letter-spacing: -0.02em;
+      text-align: justify;
+      word-break: break-all;
+    }
+    .upload-content .up-inner {
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    .upload-content .up-inner img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .upload-content .up-inner .pc {
+      display: none;
+    }
+    .upload-content .up-inner .btn {
+      display: inline-block;
+    }
+    .upload-content .up-inner .t-tc {
+      text-align: center;
+    }
+    .upload-content .up-inner .c-r {
+      color: #c50018;
+    }
+    .upload-content .up-inner p {
+      color: #000;
+      line-height: 1.7;
+    }
+    .upload-content .up-inner .eb {
+      font-weight: 800 !important;
+    }
+    .upload-content .up-inner .tit {
+      font-size: 17px;
+      line-height: 30px;
+    }
+    .upload-content .up-inner .txt {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+    .upload-content .up-inner .txt-bg {
+      background-color: #ffecbb;
+    }
+    .upload-content .up-inner .org {
+      color: #ff6a39;
+    }
+    .upload-content .up-inner .red-b {
+      border-bottom: 1px solid #da291c !important;
+    }
+    .upload-content .up-inner .cont {
+      padding-top: 45px;
+      padding-right: 0px;
+      padding-bottom: 45px;
+      padding-left: 0px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #000;
+    }
+    .upload-content .up-inner .cont img {
+      margin-top: 25px;
+      margin-right: 0px;
+      margin-bottom: 25px;
+      margin-left: 0px;
+    }
+    .upload-content .up-inner .cont img:last-child {
+      margin-bottom: 0px;
+    }
+    .upload-content .up-inner .cont2 img {
+      margin-top: 0px;
+    }
+    .upload-content .up-inner .cont3 .txt .nm {
+      font-size: 13px;
+      line-height: 28px;
+      margin-top: 5px;
+      display: inline-block;
+    }
+    .upload-content .up-inner .c-top {
+      padding-top: 30px;
+      padding-right: 0px;
+      padding-bottom: 30px;
+      padding-left: 0px;
+      box-sizing: border-box;
+      border-top: 1px solid #da291c;
+      border-bottom: 1px solid #da291c;
+    }
+    .upload-content .up-inner .news-wrap {
+      border: 1px solid #f2a900;
+      box-sizing: border-box;
+      border-radius: 25px;
+      background-color: #fff;
+      margin-top: 15px;
+      padding-top: 30px;
+      padding-right: 10px;
+      padding-bottom: 35px;
+      padding-left: 10px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .upload-content .up-inner .news-wrap .tit {
+      color: #da291c;
+      text-align: center;
+      word-break: keep-all;
+      margin-bottom: 30px;
+    }
+    .upload-content .up-inner .news-wrap .icon-img {
+      width: 330px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      margin-top: 0px;
+    }
+    .upload-content .up-inner .news-wrap .link {
+      width: 330px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      position: relative;
+    }
+    .upload-content .up-inner .news-wrap .link img {
+      width: 100%;
+      margin: 0px;
+    }
+    .upload-content .up-inner .news-wrap .link .btn {
+      font-size: 0px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .upload-content .up-inner .news-wrap .link .btn.btn1 {
+      width: 175px;
+      height: 40px;
+      bottom: 105px;
+    }
+    .upload-content .up-inner .news-wrap .link .btn.btn2 {
+      width: 230px;
+      height: 40px;
+      bottom: 0px;
+    }
+    .upload-content .up-inner .writer {
+      padding-top: 50px;
+      padding-right: 0px;
+      padding-bottom: 40px;
+      padding-left: 0px;
+      box-sizing: border-box;
+    }
+    .upload-content .up-inner .writer p {
+      font-size: 13px;
+      line-height: 23px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+      font-weight: 700;
+    }
+    .upload-content .page2 {
+      background-color: #e1ded3;
+    }
+    @media screen and (min-width: 768px) {
+      .upload-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .upload-content .up-inner {
+        padding: 50px;
+      }
+      .upload-content .up-inner .mo {
+        display: none;
+      }
+      .upload-content .up-inner .pc {
+        display: inline-block;
+      }
+      .upload-content .up-inner .txt {
+        font-size: 17px;
+        line-height: 30px;
+      }
+      .upload-content .up-inner .cont {
+        padding-top: 45px;
+        padding-right: 0px;
+        padding-bottom: 45px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .cont img {
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+      }
+      .upload-content .up-inner .cont2 img {
+        margin-top: 0px;
+      }
+      .upload-content .up-inner .cont3 .txt .nm {
+        font-size: 15px;
+        line-height: 30px;
+        margin-top: 0px;
+      }
+      .upload-content .up-inner .cont11 {
+        padding-bottom: 55px;
+      }
+      .upload-content .up-inner .c-top {
+        padding-top: 44px;
+        padding-right: 0px;
+        padding-bottom: 44px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .news-wrap {
+        border: 2px solid #f2a900;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding-top: 35px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+      }
+      .upload-content .up-inner .news-wrap .icon-img {
+        width: 700px;
+        margin-bottom: 10px;
+      }
+      .upload-content .up-inner .news-wrap .link {
+        width: 700px;
+        margin-top: 35px;
+      }
+      .upload-content .up-inner .news-wrap .link .btn.btn1 {
+        width: 280px;
+        height: 65px;
+        bottom: 163px;
+      }
+      .upload-content .up-inner .news-wrap .link .btn.btn2 {
+        width: 370px;
+        height: 65px;
+      }
+      .upload-content .up-inner .writer {
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+      .upload-content .up-inner .writer p {
+        font-size: 17px;
+        line-height: 30px;
+      }
+    }
+  </style>
+  <div class="upload-content ">
+    <div class="up-inner page2">
+      <div class="cont cont1 c-top">
+        <p class="eb tit">2024년, 많은 관심과 응원을 기다리는 새로운 활동과 참여 캠페인을 시작합니다. </p>
+      </div>
+      <div class="cont cont2">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_2d1556e5d8a14b849604b554cf262cea.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_e827176e28784ec180c2585f7c3a36e2.png" class="pc" alt="">
+        <p class="tit eb">아동의 미래까지 구하는 국제 인도적지원 사업</p>
+        <p class="txt">세이브더칠드런 30개 회원국은 전 세계 116개국에서 인도적 위기에 대한 아동의 취약성을 감소시키고, 위기 상황 이후 아동의 생존과 발달에 대한 권리를 보장하며, 아동과 그 가족들이 빠른 회복을 통해 삶을 재건하고 존엄과 기회를 되찾을 수 있도록 지속적으로 지원합니다. <span class="txt-bg">2024년에는 기후위기로 인한 기아와 기후재난, 분쟁 중에도 아동이 건강하게 성장할 수 있는 환경을 만들고, 건강한 성인으로 자립할 힘을 길러주는 활동을 시작합니다. 또한, 어떤 환경에서도 아이들이 건강하게 태어날 수 있도록 아시아 최빈국인 방글라데시의 모자보건시스템을 개선할 계획입니다.</span></p>
+      </div>
+
+      <div class="cont cont3">
+        <p class="tit eb">우간다 교육통합사업 ‘텃밭에서 자라는 아동의 미래’</p>
+        <p class="txt">  우간다 카라모자 지역 내 학교에 교내 텃밭 가꾸기(Junior Farmers’ Club) 사업을 지원하여 아이들은 직접 텃밭을 가꾸고, 식량 위기 속에서 자립할 힘을 키워나가고 있습니다.
+          세이브더칠드런은 교육, 건강, 발달에 부정적인 영향을 끼치는 식량 위기로부터 아동의 미래를 보호하고, 아동이 직접 참여케 함으로써 스스로의 권리를 배우고 누리도록 돕겠습니다. 극심한 식량 위기 상황 속, 우간다 아동들이 건강하게 학교를 마치고 성장할 수 있도록 많은 응원 부탁 드립니다.
+        </p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_80f25b44fb844efc8f9226add4226715.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_51fad0a14ebe4549885d4100fe798d32.png" class="pc" alt="">
+        <p class="txt org t-tc">
+          “주니어파머스클럽에 참여하기 전에는<br class="mo">
+          학교 내 정기적인 급식지원이 없었어요.<br>
+          (배가 고픈) 많은 친구가 학교를 그만두기도 했죠.<br>
+          지금은 클럽 활동을 통해<br class="mo">
+          값진 지식을 배워나가고 있어요.<br>
+          제 개인 텃밭도 만들었고 그곳에서<br class="mo">
+          토마토, 양파, 가지, 고추를 기르고 있답니다.<br>
+          다른 친구들도 클럽에 가입하고 싶어 해요.”<br>
+          <span class="nm">- 리즈(가명, 13세)</span>
+        </p>
+      </div>
+
+      <div class="cont cont4">
+        <p class="tit eb">방글라데시 랑푸르 주 모자보건 시스템 강화</p>
+        <p class="txt">방글라데시 랑푸르 주 지역에서 모자보건 시스템 강화 사업을 시작했습니다. 2027년까지 가정 분만으로 인한 산모 사망 위험이 높아지지 않도록 임산부들의 의료시설 분만을 장려하는 사업입니다. 샤민(가명,26세)씨는 아이 출산을 앞두고, “위험을 대비해 보건소에서 출산하고 싶다”고 말했습니다. 방글라데시에 건강한 출산에 대한 인식과 문화가 자리잡고, 이 변화를 지지하는 제도적 환경이 조성되도록 많은 성원 부탁드립니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_8825862692d744a3adfda4187e20b3d8.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_21a8710d8d8b45a390fd58b764153348.png" class="pc" alt="">
+      </div>
+
+      <div class="cont cont5">
+        <p class="tit eb">베트남-네팔, 숲을 지켜 아동을 구하는<br class="mo"> 마이포레스트차일드(My Forest Child)</p>
+        <p class="txt">마이포레스트차일드(My Forest Child) 사업은 세이브더칠드런 코리아의 첫 조림사업입니다. 베트남 최남단 까마우성의 남칸지구는 해수면 상승과 함께 토양 침식이 빠르게 진행되고 있는 기후위기 취약 지역이며, 네팔 카날리 주는 홍수 및 산사태 취약 지역입니다. 앞으로 이 지역 아동의 거주환경을 개선하고, 탄소 저감 및 기후 적응 능력을 향상하기 위해 2024년에는 지역주민과 함께 나무를 심어 숲을 복원하고, 기후위기 교육을 확대할 계획입니다. 지역별 특색에 맞는 다양한 기후위기 대응사업을 추진하고 지역주민과 아동의 참여를 통해 자연과 사람이 건강히 공존할 수 있는 선순환 구조를 만드는데 후원자님의 많은 관심 부탁드립니다.</p>
+      </div>
+
+      <div class="cont cont6">
+        <p class="tit eb">에티오피아 소말리 지역 국내실향민(IDP) 아동 보호 및 회복력 강화 사업</p>
+        <p class="txt">에티오피아 소말리 지역은 기후위기로 수많은 국내 실향민이 발생했습니다. 2024년에는 국내 실향민 중에서도 ‘아동’이 참여하고 ‘아동’의 관점이 우선적으로 고려된 지속 가능한 해결방안 연구를 진행하고 에티오피아 정부에 전달함으로써, ‘아동 중심’의 해결방안이 정부 정책에 반영될 수 있도록 할 계획입니다. 오는 3월에는 런던대학에서 진행하는 ‘국내실향민과 해결책(Internal Displacement and Solutions)’ 컨퍼런스에 에티오피아 사무소의 연구 책임자를 비롯한 세이브더칠드런의 이주(Migration & Displacement) 전문가, 협력 연구기관, 에티오피아 아동 국회의원이자 세이브더칠드런 아동 캠페이너가 참석하여 연구 결과를 공유할 예정이니 기대해 주세요!</p>
+      </div>
+
+      <div class="cont cont7">
+        <p class="tit eb">국내 복합위기가정 아동을 위한 맞춤형 지원</p>
+        <p class="txt">2019년부터 전국 저소득 조부모가정 아동의 건강한 성장과 발달을 지원해 온 ‘저소득 조부모가정 아동 지원 DREAM’ 사업이 새로운 변화를 꾀하고 있습니다. 2024년부터는 조부모가정과 더불어 한부모 가정, 다문화 가정 등 더욱 도움이 절실한 가정의 아동을 지원할 방법을 모색하고 있습니다. 더불어 후원자와 아동을 연결하는 새로운 방식도 도입할 예정이니 많은 기대 부탁 드립니다.</p>
+      </div>
+
+      <div class="cont cont8">
+        <p class="tit eb">아동·청소년 강점강화 프로그램 개발</p>
+        <p class="txt">마음도 생각도 쑥쑥 성장하는 아동·청소년은 변화에 대비한 심리사회적 지원이 필요합니다. 세이브더칠드런의 청소년 자립전담센터인 새움센터에서는 아동·청소년의 건강한 성장을 지원하는 ‘강점 강화 PYG(Positive Youth Growh)프로그램’이 시작될 예정입니다. 직접 영화를 기획하고, 제작하는 과정을 경험하는 미디어수업과 자신의 감정을 이해하는 마음수업으로 구성된 프로그램입니다. 건강한 사회구성원으로 성장하기 위해 필요한 핵심역량을 키워주는 활동에 많은 응원 부탁 드립니다.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_b27d4f069ddd4e388aab3d8c73ed1979.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_bf8991cc1ca74e778ae7e69c5226fe8d.png" class="pc" alt="">
+      </div>
+
+      <div class="cont cont9">
+        <p class="tit eb">2024년 아동정책 입법추진 활동</p>
+        <p class="txt">
+          2024년은 학대피해 장애아동 대응 매뉴얼 발간을 시작으로 제22대 국회에 학대피해 장애아동 보호체계 제도 개선을 위한 목소리를 모아 관련 입법 및 제도개선 활동을 적극 추진하고자 합니다. 장애아동 권리보장을 위해 국회와 정부를 움직일 수 있도록 여러분의 많은 관심과 지지 부탁드립니다.<br>
+          ‘아동사망검토제도’ 관련 옹호 활동은, 아동의 사망원인이 정확하게 파악되고 나아가 체계적인 대응으로 아동 사망이 예방될 수 있도록 하는 정책 제안 활동입니다. 4월에 있을 제22대 국회의원 선거를 앞두고 각 정당에 필요한 아동정책을 제시하고 법안 마련을 촉구하려고 합니다. 아동의 목소리가 국회와 정부에서 닿는 그날을 기다리며, 활발히 활동하겠습니다!
+        </p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_23c3c2d4966d4f4698063f6610760fdc.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_b973b7074fb143c6a367838a00068435.png" class="pc" alt="">
+      </div>
+
+      <div class="cont cont10">
+        <p class="tit eb">긴급구호 크루로 함께하는 세이브 원(Save One)</p>
+        <p class="txt">긴급구호 현장 최전선에서 활동 중인 세이브더칠드런 크루와 후원자님이 함께 연대하는세이브 원(Save One) 캠페인이 2024년 새로운 시즌으로 후원자님들을 찾아뵐 예정입니다. 앞으로도 후원자 분들에게 양질의 긴급구호 현장 정보를 전달드릴 수 있도록 노력하겠습니다. 지금 이 시간에도 전 세계의 심각한 재난 환경 속에서 최선을 다해 아이들을 구하고 있는 전 세계 세이브더칠드런 크루들을 응원해 주세요.</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_f0a201232c1c47f08aa86113619cd185.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_969f224c21ef439299a05e82ca8676f3.png" class="pc" alt="">
+      </div>
+
+      <div class="cont cont11 red-b">
+        <p class="tit eb">영화로 배우고 생각하는 아동의 권리,<br class="mo"> ‘씨네아동권리학교’ 확대</p>
+        <p class="txt">
+          디지털 기반의 체험형, 공감형, 참여형 프로그램인 ‘씨네아동권리학교’는 새로운 아동권리교육법을 제시하여, 작년 한 해 교육 현장에서 뜨거운 반응을 이끌어냈습니다. 2024에는 시범 사업에서 정식 교육이 되도록 사업을 확대합니다. 올해도 아동권리영화제 수상작을 활용하여 교육 커리큘럼을 만들 예정이며, 전국 다양한 교육 현장에서 누구나 연간 무료로 참여할 수 있도록 운영할 계획입니다.
+          아동권리에 대해 가장 쉽고, 재미있게 배울 수 있는 ‘씨네아동권리학교’로 놀러 오세요!</p>
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_7d7fc9efdf6b4155ba6c9bcba13f9106.png" class="mo" alt="">
+        <img src="https://www.sc.or.kr/upload/Editor/2024/editor_8c1ca992d16b417db542f0b5bea61199.png" class="pc" alt="">
+        <div class="news-wrap">
+          <p class="tit eb">
+            앞으로 펼쳐질 새로운 소식과 아동들의
+            변화 스토리는<br class="pc"> SNS, 뉴스레터, 소식지, 연차보고서
+            및 지원결과 보고서를 통해 확인하실 수 있습니다.
+          </p>
+          <img src="https://www.sc.or.kr/upload/Editor/2024/editor_de7ba78687e841f4a0daa544fee090fd.png" class="icon-img mo" alt="">
+          <img src="https://www.sc.or.kr/upload/Editor/2024/editor_744db345f1d9401eb96e91ec50067027.png" class="icon-img pc" alt="">
+          <p class="txt eb">
+            ‘홈페이지 로그인 –세이브더칠드런 활동 안내 수신’에 동의 체크로 신청하실 수 있습니다.
+          </p>
+          <div class="link">
+            <img src="https://www.sc.or.kr/upload/Editor/2024/editor_47c11fbf77a74d2d8dfd5e2677480355.png" class="mo" alt="">
+            <img src="https://www.sc.or.kr/upload/Editor/2024/editor_ef4ccacb77e44917b22c4f6ae0b5025a.png" class="pc" alt="">
+            <a href="https://www.sc.or.kr/login/loginForm.do?&utm_source=email_pr&utm_medium=email&utm_campaign=newsletter_pr" class="btn btn1" target="_blank">뉴스레터 바로가기</a>
+            <a href="https://www.sc.or.kr/news/report.do?tabType=BBSCA30001&utm_source=email_pr&utm_medium=email&utm_campaign=newsletter_pr" class="btn btn2" target="_blank">결과 보고서 다시 보기</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="writer">
+        <p><span class="c-r">글</span> 미디어팀 문지은</p>
+        <p><span class="c-r">사진</span> 세이브더칠드런</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
